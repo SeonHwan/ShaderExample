@@ -3,3 +3,4 @@
 ## 완료 기능
 
 - Rim Light
+- Outline
