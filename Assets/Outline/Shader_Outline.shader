@@ -116,13 +116,29 @@
                 return o;
             }
 
+            float LightingToon(float lightCol, float3 lightDir, float3 normal)
+            {
+                float ndotl = dot(lightDir, normal) * 0.5 + 0.5;
+                if(ndotl > 0.6)
+                    ndotl = 1;
+                else
+                    ndotl = 0.3;
+                
+                
+                // ndotl = ndotl*5;
+                // ndotl = ceil(ndotl)/5;
+
+                return ndotl * lightCol;
+            }
+            
             half4 frag (v2f i) : SV_TARGET
             {
                 Light mainLight = GetMainLight();
                 i.normal = normalize(i.normal);
 
                 //Diffuse
-                float3 lambert = LightingLambert(mainLight.color, mainLight.direction, i.normal);
+                // float3 lambert = LightingLambert(mainLight.color, mainLight.direction, i.normal);
+                float halfLambert =LightingToon(mainLight.color, mainLight.direction, i.normal);
                 float4 c = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, i.texcoord);
 
                 //Specular
@@ -132,8 +148,8 @@
                 half3 ambient = SampleSH(i.normal);
 
                 //combine
-                c.rgb *= lambert * mainLight.distanceAttenuation * mainLight.shadowAttenuation;
-                c.rgb += 0.05;
+                c.rgb *= halfLambert * mainLight.distanceAttenuation * mainLight.shadowAttenuation;
+                // c.rgb += 0.05;
 
                 
 

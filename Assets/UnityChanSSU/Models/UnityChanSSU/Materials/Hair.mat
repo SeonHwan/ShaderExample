@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Hair
-  m_Shader: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
+  m_Shader: {fileID: 4800000, guid: d1ea174b2e3a2487ab99575932d5f72e, type: 3}
   m_ShaderKeywords: _DOUBLESIDED_ON _EMISSIVE_COLOR_MAP _MATERIAL_FEATURE_SUBSURFACE_SCATTERING
     _NORMALMAP_TANGENT_SPACE
   m_LightmapFlags: 4
@@ -199,6 +199,7 @@ Material:
     - _Metallic: 0.1
     - _NormalMapSpace: 0
     - _NormalScale: 1
+    - _OutlineThickness: 0.002
     - _PPDLodThreshold: 5
     - _PPDMaxSamples: 15
     - _PPDMinSamples: 5
@@ -257,8 +258,7 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _DiffusionProfileAsset: {r: -3.1658068e+36, g: -1.4689667e+32, b: 6.5915006e-36,
-        a: -760861.7}
+    - _DiffusionProfileAsset: {r: -3.1658068e+36, g: -1.4689667e+32, b: 6.5915006e-36, a: -760861.7}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0.4339623, g: 0.34184766, b: 0.34184766, a: 1}
@@ -271,3 +271,4 @@ Material:
     - _UVDetailsMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

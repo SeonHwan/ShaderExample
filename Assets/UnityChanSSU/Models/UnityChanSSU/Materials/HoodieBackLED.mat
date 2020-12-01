@@ -21,16 +21,14 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: HoodieBackLED
-  m_Shader: {fileID: -6465566751694194690, guid: a15edb23780d59044811254f738f2ca0,
-    type: 3}
+  m_Shader: {fileID: 4800000, guid: d1ea174b2e3a2487ab99575932d5f72e, type: 3}
   m_ShaderKeywords: _BLENDMODE_ADD _ENABLE_FOG_ON_TRANSPARENT _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: -1
   stringTagMap:
     MotionVector: User
-    RenderType: Transparent
   disabledShaderPasses:
   - DistortionVectors
   - TransparentDepthPrepass
@@ -251,6 +249,7 @@ Material:
     - _Metallic: 0
     - _NormalMapSpace: 0
     - _NormalScale: 0
+    - _OutlineThickness: 0
     - _PPDLodThreshold: 5
     - _PPDMaxSamples: 15
     - _PPDMinSamples: 5
@@ -327,3 +326,4 @@ Material:
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
     - _UnlitColor: {r: 0, g: 0.8595505, b: 1, a: 1}
+  m_BuildTextureStacks: []

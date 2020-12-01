@@ -4,3 +4,4 @@
 
 - Rim Light
 - Outline
+- Cel Shading
