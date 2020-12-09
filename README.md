@@ -11,3 +11,4 @@
 
 - Alpha Blending
   - RenderFeature 를 이용해서, 알파 블렌딩 시 가려지는 부분이 보이는 문제 해결
+    ![screenshot_1](screenshot_1.png)
