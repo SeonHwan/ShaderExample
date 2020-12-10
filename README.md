@@ -11,10 +11,5 @@
 
 - Alpha Blending
 
-  - RenderFeature 를 이용해서, 알파 블렌딩 시 가려지는 부분이 보이는 문제 해결
-    ![screenshot_1](screenshot_1.png)
-
-- Dither
-  - RenderFeature 를 이용해 Alpha Blending 과 Dither 같이 적용
-    ![screenshot_2](screenshot_2.png)
-  - 픽셀 사이사이가 새는 현상 해결중
+> RenderFeature 를 이용해서, 알파 블렌딩 시 가려지는 부분이 보이는 문제 해결
+![screenshot_1](screenshot_1.png)
